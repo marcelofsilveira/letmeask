@@ -37,18 +37,18 @@ function App() {
         id: uid,
         name: displayName,
         avatar: photoURL
-      })
+      });
     }
-  } //existe algum erro - tentando descobrir
-}
-return (
-  <BrowserRouter>
-    <AuthContext.Provider value={{ user, signInWithGoogle }}>
-      <Route path="/" exact component={Home} />
-      <Route path="/rooms/new" component={NewRoom} />
-    </AuthContext.Provider >
-  </BrowserRouter>
-);
+  }
+
+  return (
+    <BrowserRouter>
+      <AuthContext.Provider value={{ user, signInWithGoogle }}>
+        <Route path="/" exact component={Home} />
+        <Route path="/rooms/new" component={NewRoom} />
+      </AuthContext.Provider >
+    </BrowserRouter>
+  );
 
 }
 
