@@ -39,7 +39,7 @@
       border: 0;
       background: transparent;
       cursor: pointer;
-      transition: filter 0.2s;
+      transition: filter .2s;
 
       &.like-button {
         display: flex;
@@ -48,16 +48,16 @@
         gap: 8px;
 
         &.liked {
-          color: #835afd;
+          color: #835AFD;
 
           svg path {
-            stroke: #835afd;
+            stroke: #835AFD;
           }
         }
       }
 
       &:hover {
-        filter: brightness(0.7);
+        filter: brightness(0.6);
       }
     }
   }
